@@ -1,0 +1,184 @@
+/*Quiz page style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 40px;
+}
+
+
+body{
+    background-image:url(images\ \(4\).jfif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+.box{
+    background-color:rgba(0, 0, 0, 0.2) ;
+    border-radius: 10px;
+    border: 5px solid #ccc;
+    box-shadow: 0 0 140px 0 rgba(0, 0, 0, 0.5);
+    min-height: 450px;
+    width: 640px;
+    padding: 20px;
+}
+
+.box-ins{
+    background-color:silver;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 250px;
+    width: 450px;
+    padding: 50px;
+}
+
+.title{
+    border-bottom: 8px solid rgba(76, 110, 21, 0.781);
+    color: rgb(77, 31, 122);
+    padding-bottom: 30px;
+    margin-bottom: 20px ;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreBox,
+.timerBox{
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 5px solid ;
+    color: rgba(76, 110, 21, 0.781);
+}
+
+.questionBox{
+    background-color: rgba(216, 188, 27, 0.781);
+    color: #fff;
+    border-radius: 10px;
+    padding:10px 15px;
+}
+
+.optionBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+}
+.optionBox button{
+    background-color: #f0efef;
+    border-radius: 10px;
+    color: #000;
+    border: 1 px solid #444;
+    padding: 10px 15px;
+    size: 20px;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button{
+    background-color:rgb(77, 31, 122);
+    border-radius: 5px;
+    padding:7px 15px;
+    color: rgb(248, 244, 228);
+    border:solid 5px; 
+    outline: none;
+    font-size: 20px;
+
+}
+.resultBox{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+}
+.resultBox *:nth-child(odd){
+    text-align: right;
+
+}
+.resultBox span{
+    font-weight: 600;
+
+}
+.buttonBox{
+    border-top: 1px solid #444;
+    padding: 15px;
+    text-align: center;
+}
+
+.buttonBox a {
+    background-color:rgb(229, 158, 26) ;
+    border-radius: 50px;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top:30px;
+    display: inline-block;
+}
+
+.correct{
+    background: #008000 !important;
+}
+
+.incorrect {
+    background: #ff0000 !important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content { background-color:rgba(76, 110, 21, 0.781) ;
+    border-radius: 10px;
+    box-shadow: 0 0 120px 0 rgba(0, 0, 0, 0.2);
+    min-height: 350px;
+    width: 640px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .instructions{color: #4169e1;}
+  
+  
+  #option1{color:#4169e1;}
+  #option2{color:#4169e1;}
+  #option3{color:#4169e1;}
+  #option0{color:#4169e1;}
+
+
+

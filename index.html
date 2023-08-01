@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="questionScreen">
+            <div class="title">
+                Coding Brainz Quiz
+            </div>
+
+            <div class="header">
+                <div class="scoreBox">Score: <span id="score">0</span></div>
+                <div class="timerBox">Time Left: <span id="timer">03:00</span></div>
+            </div>
+
+            <div class="questionBox">
+                <span id="questionText">Which HTML attribute is used to specify the width of an image?</span>
+            </div>
+
+            <div class="optionBox">
+                <label>
+                    <input type="radio" name="option" value="0">
+                    <span id="option0">a.width</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span id="option1">b.size</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span id="option2">c.length</span>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                    <span id="option3">d.scale</span>
+                </label>
+            </div>
+
+            <div class="footer">
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+
+         <div class="instructions">
+            <img  href  src="logo.jfif" width="150 " height="150" alt="logo image">
+     
+                <h2>Quiz Instructions </h2>
+                <br>
+                <ul>
+                  <li>10 QUESTIONS</li>
+                  <li>Multiple Choice
+                  <li>Select the correct answer </li>
+                  <li>180 seconds timer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
